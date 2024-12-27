@@ -49,13 +49,16 @@
             align-items: center;
             padding: 20px;
             position: relative;
+            justify-content: center;
         }
         .profile-section img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             transition: all 0.5s ease-in-out;
-            margin-left: auto;
+            position: fixed;
+            top: 10px;
+            right: 10px;
         }
         .profile-section.sticky img {
             width: 80px;
@@ -66,8 +69,11 @@
             transform: translateX(-50%);
         }
         .profile-section .info {
-            margin-left: 20px;
+            margin-right: auto; /* Alinha o nome à esquerda da imagem */
             transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            left: 50%; /* Move o nome para o centro */
+            transform: translateX(-50%);
         }
         .profile-section.sticky .info {
             opacity: 0;
@@ -81,6 +87,7 @@
             position: relative;
             height: 200px; /* Menor altura para o slideshow */
             text-align: center;
+            margin-bottom: 20px; /* Adiciona margem inferior para separar do conteúdo abaixo */
         }
         .slideshow img {
             width: 70%; /* Menor largura para o slideshow */
@@ -98,14 +105,14 @@
         }
         .bio {
             text-align: center;
-            margin-top: 20px; /* Menor margem entre slideshow e biografia */
             font-family: 'Raleway', sans-serif;
             font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte */
+            margin-bottom: 20px; /* Adiciona margem inferior para separar dos botões */
+            color: #ffd700;
         }
         .buttons {
             display: flex;
             justify-content: center;
-            margin: 20px 0;
         }
         .buttons div {
             width: 50px;
@@ -140,7 +147,7 @@
     <div class="content">
         <div class="profile-section">
             <img src="rafaperfil.jpg" alt="Perfil">
-            <div class="info" style="color: #ffd700;">
+            <div class="info">
                 <h1>Rafaela Alvez</h1>
             </div>
         </div>
@@ -150,7 +157,7 @@
             <img src="rafa3.jpg" alt="Imagem 3">
             <img src="rafa4.jpg" alt="Imagem 4">
         </div>
-        <div class="bio" style="color:#ffd700;">
+        <div class="bio">
             <p>Oii sou a Rafa. Bem vindo(a) ao meu cantinho<br>Tenho 16Y<br> Sou de Passo Fundo - RS</p>
         </div>
         <div class="buttons">
