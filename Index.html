@@ -209,8 +209,8 @@ color: #ffd700;
             slides.forEach(slide => slide.classList.remove('active'));
             slides[slideIndex].classList.add('active');
             slideIndex = (slideIndex + 1) % slides.length;
-            setTimeout(showSlides, 2000);
-        }
+            setTimeout(showSlides, 7000);
+   }
         showSlides();
 
         const bio = document.querySelector('.bio p');
