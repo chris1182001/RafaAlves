@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafaela Alvez</title>
-    <style>
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Rafaela Alvez</title> 
+  <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
@@ -55,7 +55,7 @@
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.3s ease-in-out;
             position: fixed;
             top: 10px;
             right: 10px;
@@ -69,11 +69,14 @@
             transform: translateX(-50%);
         }
         .profile-section .info {
+margin-top:90px;
+color: #ffd700;
             margin-right: auto; /* Alinha o nome à esquerda da imagem */
             transition: opacity 0.5s ease-in-out;
             position: absolute;
             left: 50%; /* Move o nome para o centro */
             transform: translateX(-50%);
+ width:200px;
         }
         .profile-section.sticky .info {
             opacity: 0;
@@ -137,35 +140,60 @@
             height: 100%; /* Ajusta a altura para 100% */
             border-radius: 50%;
         }
-    </style>
-</head>
-<body>
-    <div class="cover">
-        <video src="strelas.mp4" autoplay loop muted></video>
-        <div class="overlay"></div>
-    </div>
-    <div class="content">
-        <div class="profile-section">
-            <img src="rafaperfil.jpg" alt="Perfil">
-            <div class="info">
-                <h1>Rafaela Alvez</h1>
-            </div>
-        </div>
-        <div class="slideshow">
-            <img src="rafa1.jpg" class="active" alt="Imagem 1">
-            <img src="rafa2.jpg" alt="Imagem 2">
-            <img src="rafa3.jpg" alt="Imagem 3">
-            <img src="rafa4.jpg" alt="Imagem 4">
-        </div>
-        <div class="bio">
-            <p>Oii sou a Rafa. Bem vindo(a) ao meu cantinho<br>Tenho 16Y<br> Sou de Passo Fundo - RS</p>
-        </div>
-        <div class="buttons">
-            <div><a href="https://wa.link/bt3ygv"><img src="wpp.jpg" alt="WhatsApp"></a></div>
-            <div><a href="https://www.instagram.com/alveszwfj?igsh=MXJneDV0Y3Z3aW1qbw=="><img src="insta.jpg" alt="Instagram"></a></div>
-        </div>
-    </div>
-    <script>
+    </style> 
+ </head> 
+ <body> 
+  <div class="cover"> 
+   <video src="strelas.mp4" autoplay="" loop="" muted></video> 
+   <div class="overlay"></div> 
+  </div> 
+  <div class="content"> 
+   <div class="profile-section sticky"> 
+    <img src="rafaperfil.jpg" alt="Perfil"> 
+    <div class="info"> 
+     <h1>Rafaela Alvez</h1> 
+    </div> 
+   </div> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <div class="slideshow"> 
+    <img src="rafa1.jpg" class="active" alt="Imagem 1"> 
+    <img src="rafa2.jpg" alt="Imagem 2" class=""> 
+    <img src="rafa3.jpg" alt="Imagem 3" class=""> 
+    <img src="rafa4.jpg" alt="Imagem 4" class=""> 
+   </div> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br> 
+   <br> 
+   <br> 
+   <div class="bio"> 
+    <p>Oii sou a Rafa. Bem vindo(a) ao meu cantinho<br>Tenho 16Y<br> Sou de Passo Fundo - RS</p> 
+   </div> 
+   <div class="buttons"> 
+    <div> 
+     <a href="https://wa.link/bt3ygv"><img src="wpp.jpg" alt="WhatsApp"></a> 
+    </div> 
+    <div> 
+     <a href="https://www.instagram.com/alveszwfj?igsh=MXJneDV0Y3Z3aW1qbw=="><img src="insta.jpg" alt="Instagram"></a> 
+    </div> 
+   </div> 
+  </div> 
+  <script>
         window.addEventListener('scroll', function() {
             const profileSection = document.querySelector('.profile-section');
             if (window.scrollY > profileSection.offsetTop) {
@@ -198,6 +226,6 @@
             setTimeout(changeBio, 20000);
         }
         changeBio();
-    </script>
+     </script>
 </body>
-</html>
+      </html>
