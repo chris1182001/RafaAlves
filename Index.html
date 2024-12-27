@@ -85,12 +85,17 @@
             text-align: center;
             line-height: 50px;
         }
+        .buttons div img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <div class="cover">
         <div class="profile-section">
-            <img src="sua-foto-de-perfil.jpg" alt="Perfil">
+            <img src="rafaperfil.jpg" alt="Perfil">
             <div class="info">
                 <h1>Rafaela Alvez</h1>
                 <p>16 Y</p>
@@ -98,18 +103,17 @@
         </div>
     </div>
     <div class="slideshow">
-        <img src="https://photos.app.goo.gl/xM1LUHFxeTaCFNUj6" class="active" alt="Imagem 1">
-        <img src="https://photos.app.goo.gl/xM1LUHFxeTaCFNUj6" alt="Imagem 2">
-        <img src="imagem3.jpg" alt="Imagem 3">
-        <img src="imagem4.jpg" alt="Imagem 4">
+        <img src="rafa1.jpg" class="active" alt="Imagem 1">
+        <img src="rafa2.jpg" alt="Imagem 2">
+        <img src="rafa3.jpg" alt="Imagem 3">
+        <img src="rafa4.jpg" alt="Imagem 4">
     </div>
     <div class="bio">
-        <p>Biografia curta para uma mulher jovem.</p>
+        <p>Oii sou a Rafa. Bem vindo(a) ao meu cantinho<br>Tenho 16Y<br> Sou de Passo Fundo - RS</p>
     </div>
     <div class="buttons">
-        <div><a href="#">Botão </a></div>
-        <div><a href="#">Botão </a></div>
-        <div><a href="#">Botão </a></div>
+        <div><a href="https://wa.link/bt3ygv"><img src="wpp.png" alt="WhatsApp"></a></div>
+        <div><a href="https://www.instagram.com/alveszwfj?igsh=MXJneDV0Y3Z3aW1qbw=="><img src="insta.png" alt="Instagram"></a></div>
     </div>
     <script>
         window.addEventListener('scroll', function() {
@@ -133,13 +137,13 @@
 
         const bio = document.querySelector('.bio p');
         const texts = [
-            "Biografia curta para uma mulher jovem.",
+            "Oii sou a Rafa. Bem vindo(a) ao meu cantinho<br>Tenho 16Y<br> Sou de Passo Fundo - RS",
             "Sonhos de uma mulher jovem.",
             "Coisas que a mulher gosta: balada, passeio, sorrir, conversar."
         ];
         let textIndex = 0;
         function changeBio() {
-            bio.textContent = texts[textIndex];
+            bio.innerHTML = texts[textIndex];
             textIndex = (textIndex + 1) % texts.length;
             setTimeout(changeBio, 20000);
         }
